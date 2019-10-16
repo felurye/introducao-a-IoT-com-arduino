@@ -1,26 +1,104 @@
-float seno;
-int frequencia;  
+//Programa: Som no Arduino - Do Re Mi
+//Autor: Arduino e Cia
 
-void setup() { 
-  pinMode(9,OUTPUT); //define o pino 9 como saída 
-}   
+#define DOH 262
+#define RE 294
+#define MI 330
+#define FA 349
+#define SOL 392
+#define LA 440
+#define SI 494
+#define PINO 10
 
-void loop() { 
+
+void setup() 
+{
+pinMode(10,OUTPUT); //Pino do buzzer
+}
+
+void loop()
+{
+    delay(2000);
+    tone(PINO, DOH, 200); //DO
   
-  for(int x=0;x<180;x++){
-    seno=(sin(x*3.1416/180)); //converte graus para radiando e depois obtém o valor do seno     
-    frequencia = 2000+(int(seno*1000)); //gera uma frequência a partir do valor do seno  
-    tone(9,frequencia);  
-    delay(2);  
-  } 
+    delay(200);
+    tone(PINO, RE, 300); //RE
+  
+    delay(200);
+    tone(PINO, MI, 300); //MI
+  
+    delay(200);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
+    tone(PINO, DOH, 100); //DO
+  
+    delay(200);
+    tone(PINO, RE, 300); //RE
+  
+    delay(200);   
+    tone(PINO, DOH, 100); //DO
+  
+    delay(200);
+    tone(PINO, RE, 300); //RE
+  
+    delay(300);
+    tone(PINO, RE, 300); //RE
+  
+    delay(300);
+    tone(PINO, RE, 300); //RE
+  
+    delay(300);
+    tone(PINO, DOH, 200); //DO
+  
+    delay(200);
+    tone(PINO, SOL, 200); //SOL
+  
+    delay(200);
+    tone(PINO, FA, 200); //FA
+  
+    delay(200);
+    tone(PINO, MI, 300); //MI
+  
+    delay(300);
+    tone(PINO, MI, 300); //MI
+  
+    delay(300);
+    tone(PINO, MI, 300); //MI
+  
+    delay(300);
+    tone(PINO, DOH, 200); //DO
+  
+    delay(200);
+    tone(PINO, RE, 300); //RE
+  
+    delay(200);
+    tone(PINO, MI, 300); //MI
+  
+    delay(200);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
+    tone(PINO, FA, 300); //FA
+  
+    delay(300);
 }
 
 /*---------- EXPLICAÇÃO ----------*/
 
 /*
- * Nesse programa são feitos calculos por meio de valores de seno, com isso podemos gerar uma
- * frequencia para o buzzer executar. a cada interação dentro do for os calculos são gerados e
- * executados na função tone, onde é passado por paremetro o pino onde o buzzer se encontra
- * e a intensidade do som que o buzzer fará. E também temos a função delay, para mander o som executando
- * por um determinado tempo.
+ * Com os valores definidos das fequências das notas músicais o buzzer executa
+ * as mesmas a cada interação dentro do loop com auxilio da função tone
+ * onde é passado por paremetro o pino onde o buzzer se encontra,
+ * a intensidade do som que o buzzer fará e o tempo que ele executará a nota. 
+ * E também temos a função delay, para esperar o tempo para a próxima nota.
 */
