@@ -10,3 +10,4 @@ Minicurso de Introdução à IoT ministrado na X SECITEC do Instituto Federal de
 * [5 - Led com Controle de Intensidade](https://www.tinkercad.com/things/eUOQka4fVgC)
 * [6 - Música com um Buzzer](https://www.tinkercad.com/things/kBvUw3MBBrT)
 * [7 - Sensor de Luz](https://www.tinkercad.com/things/9Zue6ACcbmU)
+* [8 - Medindo Temperatura](https://www.tinkercad.com/things/k10rIHUTuIk)
