@@ -13,3 +13,7 @@ Minicurso de Introdução à IoT ministrado na X SECITEC do Instituto Federal de
 * [8 - Medindo Temperatura](https://www.tinkercad.com/things/k10rIHUTuIk)
 * [8 - Medindo Distância com HC-SR04](https://www.tinkercad.com/things/lS9mE9sOQS2)
 
+### Recomendações
+
+#### Curso diversos relacionados a Internet da Coisas:
+* [CodeIoT](http://codeiot.org.br/)
